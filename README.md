@@ -29,7 +29,7 @@
 
 ```
 git clone https://github.com/PatrickAlphaC/hardhat-erc20-fcc
-cd hardhat-fund-me-fcc
+cd hardhat-erc20-fcc
 yarn
 ```
 
@@ -77,7 +77,7 @@ In it's current state, if you have your api key set, it will auto verify kovan c
 However, you can manual verify with:
 
 ```
-yarn hardhat verify --constructor-args arguments.js DEPLOYED_CONTRACT_ADDRESS
+yarn hardhat verify --constructor-args arguments DEPLOYED_CONTRACT_ADDRESS
 ```
 
 # Thank you!
