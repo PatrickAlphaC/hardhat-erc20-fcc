@@ -5,6 +5,7 @@
 - [Getting Started](#getting-started)
   - [Requirements](#requirements)
   - [Quickstart](#quickstart)
+    - [Optional Gitpod](#optional-gitpod)
 - [Usage](#usage)
 - [Deployment to a testnet or mainnet](#deployment-to-a-testnet-or-mainnet)
   - [Verify on etherscan](#verify-on-etherscan)
@@ -31,6 +32,12 @@ git clone https://github.com/PatrickAlphaC/hardhat-erc20-fcc
 cd hardhat-fund-me-fcc
 yarn
 ```
+
+### Optional Gitpod
+
+If you can't or don't want to run and install locally, you can work with this repo in Gitpod. If you do this, you can skip the `clone this repo` part.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#github.com/PatrickAlphaC/hardhat-erc20-fcc)
 
 
 # Usage
