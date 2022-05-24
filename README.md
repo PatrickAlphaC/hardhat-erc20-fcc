@@ -5,6 +5,7 @@
 - [Getting Started](#getting-started)
   - [Requirements](#requirements)
   - [Quickstart](#quickstart)
+    - [Typescript (Optional)](#typescript-optional)
     - [Optional Gitpod](#optional-gitpod)
 - [Usage](#usage)
 - [Deployment to a testnet or mainnet](#deployment-to-a-testnet-or-mainnet)
@@ -31,6 +32,12 @@
 git clone https://github.com/PatrickAlphaC/hardhat-erc20-fcc
 cd hardhat-erc20-fcc
 yarn
+```
+
+### Typescript (Optional)
+
+```
+git checkout typescript
 ```
 
 ### Optional Gitpod
