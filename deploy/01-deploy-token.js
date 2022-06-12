@@ -24,3 +24,5 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
     await verify(ourToken.address, [INITIAL_SUPPLY])
   }
 }
+
+module.exports.tags = ["all", "token"]
