@@ -97,7 +97,7 @@ module.exports = {
   },
   contractSizer: {
     runOnCompile: false,
-    only: ["Raffle"],
+    only: ["OurToken"],
   },
   namedAccounts: {
     deployer: {
