@@ -12,3 +12,13 @@ artifacts
 gas-report.txt
 .notes.md
 deployments
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Vscode
+.vscode
