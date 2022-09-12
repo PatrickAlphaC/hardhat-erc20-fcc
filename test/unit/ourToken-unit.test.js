@@ -51,6 +51,7 @@ describe("OurToken Unit Test", function () {
                 ourToken.transfer(user1, (10 * multiplier).toString())
             ).to.emit(ourToken, "Transfer");
         });
+     });  
         describe("allowances", () => {
             const amount = (20 * multiplier).toString();
             beforeEach(async () => {
@@ -95,4 +96,3 @@ describe("OurToken Unit Test", function () {
             });
         });
     });
-});
