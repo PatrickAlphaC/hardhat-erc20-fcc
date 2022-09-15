@@ -1,4 +1,4 @@
-const { getNamedAccounts, deployments, network } = require("hardhat")
+const { network } = require("hardhat")
 const {
   developmentChains,
   INITIAL_SUPPLY,
