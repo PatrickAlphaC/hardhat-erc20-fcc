@@ -32,16 +32,6 @@ const { developmentChains, INITIAL_SUPPLY } = require("../../helper-hardhat-conf
                   assert.equal(symbol, "OT")
               })
           })
-          describe("minting", () => {
-              it("user can not mint", async () => {
-                  try {
-                      await ourToken._mint(deployer, 100)
-                      assert(false)
-                  } catch (e) {
-                      assert(e)
-                  }
-              })
-          })
           describe("transfers", () => {
               it("Should be able to transfer tokens successfully to an address", async () => {
                   const tokensToSend = ethers.utils.parseEther("10")
