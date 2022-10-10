@@ -6,7 +6,6 @@ import "hardhat-gas-reporter"
 import "dotenv/config"
 import "solidity-coverage"
 import "hardhat-deploy"
-import "solidity-coverage"
 import { HardhatUserConfig } from "hardhat/config"
 
 /**
@@ -33,7 +32,7 @@ const POLYGONSCAN_API_KEY =
   process.env.POLYGONSCAN_API_KEY || "Your polygonscan API key"
 const REPORT_GAS = process.env.REPORT_GAS || false
 
-module.exports = {
+const config: HardhatUserConfig = {
   defaultNetwork: "hardhat",
   networks: {
     hardhat: {
@@ -122,3 +121,5 @@ module.exports = {
     timeout: 200000, // 200 seconds max for running tests
   },
 }
+
+export default config
