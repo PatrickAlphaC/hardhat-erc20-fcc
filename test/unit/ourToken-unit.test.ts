@@ -1,6 +1,6 @@
 import { BigNumber } from "ethers"
 import { assert, expect } from "chai"
-import { deployments, ethers } from "hardhat"
+import { deployments, ethers, network } from "hardhat"
 import { developmentChains, INITIAL_SUPPLY } from "../../helper-hardhat-config"
 import { OurToken } from "../../typechain-types";
 import { SignerWithAddress } from "@nomiclabs/hardhat-ethers/signers";
