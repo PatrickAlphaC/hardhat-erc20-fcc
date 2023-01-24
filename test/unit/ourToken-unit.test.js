@@ -50,16 +50,14 @@ const { developmentChains, INITIAL_SUPPLY } = require("../../helper-hardhat-conf
               beforeEach(async () => {
                   playerToken = await ethers.getContract("OurToken", user1)
               })
-              it("Should approve other address to spend token", async () => {
+              it("Should approve other address to spend token", async () => {           
                   const tokensToSpend = ethers.utils.parseEther("5")
+                  //Deployer is approving that user1 can spend 5 of their precious OT's
                   await ourToken.approve(user1, tokensToSpend)
-                  const ourToken1 = await ethers.getContract("OurToken", user1)
-                  await ourToken1.transferFrom(deployer, user1, tokensToSpend)
-                  expect(await ourToken1.balanceOf(user1)).to.equal(tokensToSpend)
+                  await playerToken.transferFrom(deployer, user1, tokensToSpend)
+                  expect(await playerToken.balanceOf(user1)).to.equal(tokensToSpend)
               })
-              it("doesn't allow an unnaproved member to do transfers", async () => {
-                  //Deployer is approving that user1 can spend 20 of their precious OT's
-
+              it("doesn't allow an unnaproved member to do transfers", async () => {                  
                   await expect(
                       playerToken.transferFrom(deployer, user1, amount)
                   ).to.be.revertedWith("ERC20: insufficient allowance")
